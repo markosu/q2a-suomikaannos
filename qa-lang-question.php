@@ -1,7 +1,7 @@
 <?php
 	
 /*
-	Question2Answer (c) Gideon Greenspan
+	Question2Answer by Gideon Greenspan and contributors
 
 	http://www.question2answer.org/
 
@@ -149,7 +149,7 @@
 		'retag_cat_popup' => 'Vaihda tämän kysymyksen kategoriaa tai tageja',
 		'retag_popup' => 'Vaihda tämän kysymyksen tageja',
 		'retag_q_title' => 'Uudelleentagaa kysymys',
-		'save_silent_label' => "Tallenna 'hiljaisesti' siten ettei muutoksesta jää merkintää", 
+		'save_silent_label' => 'Tallenna \'hiljaisesti\' siten ettei muutoksesta jää merkintää', 
 		'select_popup' => 'Klikkaa valitaksesi paras vastaus',
 		'select_text' => 'Paras vastaus',
 		'show_1_comment' => 'Näytä 1 kommentti',
