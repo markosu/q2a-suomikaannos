@@ -26,7 +26,7 @@
 
 	return array(
 		'a_commented_body' => "Sinun kysymyksesi sivustolla ^site_title on saanut uuden kommentin käyttäjältä ^c_handle:\n\n^open^c_content^close\n\nVastauksesi oli:\n\n^open^c_context^close\n\nVoit vastata lisäämällä oman kommenttisi:\n\n^url\n\nKiitos,\n\n^site_title",
-		'a_commented_subject' => 'Sinun kysymyksesi sivustolla ^site_title on saanut uuden kommentin',
+		'a_commented_subject' => 'Sinun vastaustasi sivustolla ^site_title on kommentoitu.',
 
 		'a_followed_body' => "Sinun kysymykselläsi sivustolla ^site_title on uusi siihen liittyvä kysymys käyttäjältä ^q_handle:\n\n^open^q_title^close\n\nVastauksesi oli:\n\n^open^a_content^close\n\nKlikkaa linkkiä vastaaksesi uuteen kysymykseen:\n\n^url\n\nThank you,\n\n^site_title",
 		'a_followed_subject' => 'Sinun kysymykselläsi sivustolla ^site_title on uusi siihen liittyvä kysymys',
