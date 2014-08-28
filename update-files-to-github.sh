@@ -23,6 +23,11 @@ echo "1/3 Updating local repository from Github"
 cd $LOCALPATH
 
 if [ -d $REPOFOLDER/.git ]; then
+	# Hmm....what if merge is needed? Could we just force an overwrite 
+	# from Github repository? Something like
+	# 	git reset --hard HEAD
+	#	git clean -f -d
+	#	git pull
 	echo "Existing local repo FOUND, updating..."
 	cd $REPOFOLDER
 	git pull
