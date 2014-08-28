@@ -11,4 +11,6 @@ https://github.com/koulutuksenpilvivayla/pilvivayla-kysy/tree/devel/qa-lang/fi
 
 ## Prosessi miten käännökset päivittyvät
 
-Kaikki käännöstyö tehdään transifex palvelussa. Joka yö vedämme uudet käännökset suorittamalla skriptin crontabia hyväksi käyttäen väliaikaiseen repositoryyn palvelimelle. Sieltä samainen skripti puskee gitin avulla muutokset tähän repositoryyn. 
+1. Kaikki käännöstyö tehdään transifex palvelussa. 
+2. Joka yö vedämme uudet käännökset transifexista väliaikaiseen repositoryyn palvelimelle suorittamalla skriptin crontabia hyväksi käyttäen. 
+3. Sieltä samainen skripti puskee gitin avulla muutokset tähän repositoryyn. 
