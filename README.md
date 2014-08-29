@@ -14,3 +14,5 @@ https://github.com/koulutuksenpilvivayla/pilvivayla-kysy/tree/devel/qa-lang/fi
 1. Kaikki käännöstyö tehdään transifex palvelussa. 
 2. Joka yö vedämme uudet käännökset transifexista väliaikaiseen repositoryyn palvelimelle suorittamalla ![skriptin](https://github.com/markosu/q2a-suomikaannos/blob/master/update-files-to-github.sh) crontabia hyväksi käyttäen. 
 3. Sieltä samainen skripti puskee gitin avulla muutokset tähän repositoryyn. 
+
+Älä muuta .php tiedostojen sisältöä manuaalisesti, koska ne tulevat transifexista ja korvaavat aina entiset 'as is'. Toisin sanoen manuaaliset muutokset häviävät päivitysprosessissa. 
