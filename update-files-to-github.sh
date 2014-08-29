@@ -24,11 +24,11 @@ REPOFOLDER="q2a-suomikaannos"
 now=$(date)
 
 
-echo "1/3 Updating local repository from Github" >> $LOCALPATH/$REPOFOLDER/update.log
 cd $LOCALPATH
 
 if [ -d $REPOFOLDER/.git ]; then
         cd $REPOFOLDER
+	echo "1/3 Updating local repository from Github" >> update.log
         echo "Existing local repo FOUND, updating..."  >> update.log
 	rm -rf ./*.php
 	rm -rf ./readme*
@@ -42,6 +42,7 @@ if [ -d $REPOFOLDER/.git ]; then
 	echo "last update: $now" >> update.log
 
 else
+	echo "1/3 Updating local repository from Github" >> update.log
 	echo "Local repository not found, cloning repository..."  >> update.log
 	git clone $GITHUBREPO
 
