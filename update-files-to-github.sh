@@ -12,7 +12,10 @@
 #
 # We assume that you have ssl keys working so that pushing to github does
 # not require password authentication.
-#   
+# 
+# We assume that you have already initiated transifex in your computer
+# after installing the client and issue command "tx init" 
+#  
 # The address of github translation repository:
 GITHUBREPO="git@github.com:markosu/q2a-suomikaannos.git"
 # local path of the repository folder, if does not exist -> exit
