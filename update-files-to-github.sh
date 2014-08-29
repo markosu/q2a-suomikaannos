@@ -24,11 +24,11 @@ REPOFOLDER="q2a-suomikaannos"
 now=$(date)
 
 
-echo "1/3 Updating local repository from Github"
+echo "1/3 Updating local repository from Github" >> update.log
 cd $LOCALPATH
 
 if [ -d $REPOFOLDER/.git ]; then
-        echo "Existing local repo FOUND, updating..."
+        echo "Existing local repo FOUND, updating..."  >> update.log
         cd $REPOFOLDER
 	rm -rf ./*.php
 	rm -rf ./readme*
@@ -42,23 +42,23 @@ if [ -d $REPOFOLDER/.git ]; then
 	echo "last update: $now" >> update.log
 
 else
-	echo "Local repository not found, cloning repository..."
+	echo "Local repository not found, cloning repository..."  >> update.log
 	git clone $GITHUBREPO
 
 fi;
 
-echo "Done with local repository update from Github"
-echo "---------------------------------------------"
-echo "2/3 Pulling new translations from Transifex"
+echo "Done with local repository update from Github"  >> update.log
+echo "---------------------------------------------"  >> update.log
+echo "2/3 Pulling new translations from Transifex"  >> update.log
 echo "pulling new translation files from Transifex..." >> update.log
 tx pull -a
 
-echo "Done with Transifex"
-echo "--------------------"
-echo "3/3 Pushing changes to Github"
+echo "Done with Transifex"  >> update.log
+echo "--------------------"  >> update.log
+echo "3/3 Pushing changes to Github"  >> update.log
 
 git add -A
 git commit -m "Kyyberi's desktop updating translation files"
 git push -u origin master
-echo "Done with Github repository update"
-echo "----------------------------------"
+echo "Done with Github repository update"  >> update.log
+echo "----------------------------------"  >> update.log
