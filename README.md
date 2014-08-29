@@ -19,6 +19,7 @@ https://github.com/koulutuksenpilvivayla/pilvivayla-kysy/tree/devel/qa-lang/fi
 
 ## Oletukset
 Oletuksena on että 
+
 1. sinulla on push oikeus tähän repositoryyn
 2. sinulla on SSH avaimet käytössä etkä tarvitse salasanojen syöttöä muutoksien lisäämisessä Githubiin.
 3. asennat transifex asiakasohjelman (http://docs.transifex.com/developer/client/)
