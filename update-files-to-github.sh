@@ -26,13 +26,15 @@ echo "1/3 Updating local repository from Github"
 cd $LOCALPATH
 
 if [ -d $REPOFOLDER/.git ]; then
+        echo "Existing local repo FOUND, updating..."
+        cd $REPOFOLDER
+	rm -rf ./*.php
+	rm -rf ./readme*
 	# Hmm....what if merge is needed? Could we just force an overwrite 
 	# from Github repository? Something like
-	# 	git reset --hard HEAD
-	#	git clean -f -d
-	#	git pull
-	echo "Existing local repo FOUND, updating..."
-	cd $REPOFOLDER
+	# git reset --hard HEAD
+	# git clean -f -d
+	# The above will remove .tx folder as well
 	git pull
 else
 	echo "Local repository not found, cloning repository..."
@@ -41,11 +43,18 @@ else
 fi;
 
 echo "Done with local repository update from Github"
-
+echo "---------------------------------------------"
 echo "2/3 Pulling new translations from Transifex"
+tx pull -a
 
 echo "Done with Transifex"
-
+echo "--------------------"
 echo "3/3 Pushing changes to Github"
+now=$(date)
+echo "last update: $now" >> update.log
 
+git add -A
+git commit -m "Kyyberi's desktop updating translation files"
+git push -u origin master
 echo "Done with Github repository update"
+echo "----------------------------------"
