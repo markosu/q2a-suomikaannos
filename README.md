@@ -9,7 +9,9 @@ https://gitorious.org/q2a-fi/q2a-fi
 
 https://github.com/koulutuksenpilvivayla/pilvivayla-kysy/tree/devel/qa-lang/fi
 
-## Prosessi miten käännökset päivittyvät
+## Miten tämä tehtiin?
+
+Tästä alaspäin löydät tietoja siitä miten käännöksien päivittäminen toteutettiin.
 
 1. Kaikki käännöstyö tehdään transifex palvelussa. 
 2. Joka yö vedämme uudet käännökset transifexista väliaikaiseen repositoryyn palvelimelle suorittamalla skriptin (update-files-to-github.sh) crontabia hyväksi käyttäen. 
@@ -27,7 +29,8 @@ Oletuksena on että
 5. olet tehnyt .transifexrc tiedoston oman kotihakemistoosi (katso esimerkki alta). 
 6. ...
 
-### Esimerkki .transifexrc
+**Esimerkki .transifexrc**
+
 ```bash
 kyyberi@kyyberi:~/Github/q2a-suomikaannos$ cat /home/kyyberi/.transifexrc 
 [https://www.transifex.com]
@@ -37,3 +40,5 @@ token =
 username = kyyberi
 ```
 Huom! Token jää tyhjäksi. 
+
+Lisäksi itse repositoryn sisällä on ".tx" kansio, jossa on "config" tiedosto, jossa määritellään muun muassa millä nimillä tiedostot tallennetaan ja minne. 
