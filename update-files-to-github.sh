@@ -30,6 +30,7 @@ if [ -d $REPOFOLDER/.git ]; then
         cd $REPOFOLDER
 	rm -rf ./*.php
 	rm -rf ./readme*
+	rm -rf ./update.log
 	# Hmm....what if merge is needed? Could we just force an overwrite 
 	# from Github repository? Something like
 	# git reset --hard HEAD
