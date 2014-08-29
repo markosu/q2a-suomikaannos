@@ -24,7 +24,7 @@ REPOFOLDER="q2a-suomikaannos"
 now=$(date)
 
 
-echo "1/3 Updating local repository from Github" >> update.log
+echo "1/3 Updating local repository from Github" >> $LOCALPATH/$REPOFOLDER/update.log
 cd $LOCALPATH
 
 if [ -d $REPOFOLDER/.git ]; then
