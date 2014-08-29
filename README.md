@@ -42,3 +42,8 @@ username = kyyberi
 Huom! Token jää tyhjäksi. 
 
 Lisäksi itse repositoryn sisällä on ".tx" kansio, jossa on "config" tiedosto, jossa määritellään muun muassa millä nimillä tiedostot tallennetaan ja minne. 
+
+Sen jälkeen asetat skriptin crontabiin tai voit tietysti manuaalisesti ajaa skriptin tyyliin:
+```bash
+kyyberi@kyyberi:~/Github/q2a-suomikaannos$ ./update-files-to-github.sh more update
+```
