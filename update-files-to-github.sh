@@ -28,8 +28,8 @@ echo "1/3 Updating local repository from Github" >> update.log
 cd $LOCALPATH
 
 if [ -d $REPOFOLDER/.git ]; then
-        echo "Existing local repo FOUND, updating..."  >> update.log
         cd $REPOFOLDER
+        echo "Existing local repo FOUND, updating..."  >> update.log
 	rm -rf ./*.php
 	rm -rf ./readme*
 	rm -rf ./update.log
@@ -50,7 +50,6 @@ fi;
 echo "Done with local repository update from Github"  >> update.log
 echo "---------------------------------------------"  >> update.log
 echo "2/3 Pulling new translations from Transifex"  >> update.log
-echo "pulling new translation files from Transifex..." >> update.log
 tx pull -a
 
 echo "Done with Transifex"  >> update.log
