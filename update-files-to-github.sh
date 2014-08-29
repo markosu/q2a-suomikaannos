@@ -21,6 +21,8 @@ GITHUBREPO="git@github.com:markosu/q2a-suomikaannos.git"
 # local path of the repository folder, if does not exist -> exit
 LOCALPATH="/home/kyyberi/Github"
 REPOFOLDER="q2a-suomikaannos"
+now=$(date)
+
 
 echo "1/3 Updating local repository from Github"
 cd $LOCALPATH
@@ -37,6 +39,8 @@ if [ -d $REPOFOLDER/.git ]; then
 	# git clean -f -d
 	# The above will remove .tx folder as well
 	git pull
+	echo "last update: $now" >> update.log
+
 else
 	echo "Local repository not found, cloning repository..."
 	git clone $GITHUBREPO
@@ -46,13 +50,12 @@ fi;
 echo "Done with local repository update from Github"
 echo "---------------------------------------------"
 echo "2/3 Pulling new translations from Transifex"
+echo "pulling new translation files from Transifex..." >> update.log
 tx pull -a
 
 echo "Done with Transifex"
 echo "--------------------"
 echo "3/3 Pushing changes to Github"
-now=$(date)
-echo "last update: $now" >> update.log
 
 git add -A
 git commit -m "Kyyberi's desktop updating translation files"
