@@ -13,7 +13,8 @@ https://github.com/koulutuksenpilvivayla/pilvivayla-kysy/tree/devel/qa-lang/fi
 
 Tästä alaspäin löydät tietoja siitä miten käännöksien päivittäminen toteutettiin.
 
-1. Kaikki käännöstyö tehdään transifex palvelussa. 
+1. Kaikki käännöstyö tehdään transifex palvelussa.
+   https://www.transifex.com/projects/p/q2a-finnish-suomi-translation/
 2. Joka yö vedämme uudet käännökset transifexista väliaikaiseen repositoryyn palvelimelle suorittamalla skriptin (update-files-to-github.sh) crontabia hyväksi käyttäen. 
 3. Sieltä samainen skripti puskee gitin avulla muutokset tähän repositoryyn. 
 
