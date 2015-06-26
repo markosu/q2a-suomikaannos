@@ -5,3 +5,11 @@ Done with local repository update from Github
 Done with Transifex
 --------------------
 3/3 Pushing changes to Github
+1/3 Updating local repository from Github
+Local repository not found, cloning repository...
+Done with local repository update from Github
+---------------------------------------------
+2/3 Pulling new translations from Transifex
+Done with Transifex
+--------------------
+3/3 Pushing changes to Github
