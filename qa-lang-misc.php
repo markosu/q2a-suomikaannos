@@ -1,13 +1,9 @@
 <?php
-	
 /*
 	Question2Answer by Gideon Greenspan and contributors
-
 	http://www.question2answer.org/
 
-	
 	File: qa-include/qa-lang-misc.php
-	Version: See define()s at top of qa-include/qa-base.php
 	Description: Miscellaneous language phrases
 
 
@@ -15,7 +11,7 @@
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 2
 	of the License, or (at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -58,6 +54,7 @@
 		'form_security_reload' => 'Päivitä sivu, jonka jälkeen yritä uudelleen.',
 		'hide_all_ip_button' => 'Piilota kaikki viestit tästä IP-osoitteesta',
 		'host_name' => 'Palvelimen nimi (host name):',
+		'inbox' => 'Saapuneet',
 		'matches_blocked_ips' => 'Samanlaiset blokatut IP-osoitteet:',
 		'message_empty' => 'Kirjoita viestisi tälle käyttäjälle',
 		'message_explanation' => 'Tämä lähetetään viestinä ^. Sähköpostiosoitettasi ei paljasteta, ellet itse anna sitä viestissä.',
@@ -66,6 +63,9 @@
 		'message_must_login' => 'Ole hyvä ja ^1kirjaudu^2 tai ^3rekisteröidy^4 yksityisviestin lähettämiseksi.',
 		'message_recent_history' => 'Viimeisin viesti ^',
 		'message_sent' => 'Lähetetyt yksityisviesit',
+		'more_favorite_qs' => 'Lisää suosittuja kysymyksiä...',
+		'more_favorite_tags' => 'Lisää suosikkiavainsanoja...',
+		'more_favorite_users' => 'Lisää suosikkikäyttäjiä...',
 		'my_favorites_title' => 'Suosikkini',
 		'nav_all_my_updates' => 'Kaikki päivitykseni',
 		'nav_my_content' => 'Sisältöni',
@@ -73,6 +73,7 @@
 		'nav_my_favorites' => 'Suosikkini',
 		'nav_user_activity' => 'Viimeisimmät aktiviteetit',
 		'nav_user_as' => 'Kaikki vastaukset',
+		'nav_user_pms' => 'Yksityisviestit',
 		'nav_user_qs' => 'Kaikki kysymykset',
 		'nav_user_wall' => 'Seinä',
 		'no_activity_from_x' => 'Ei aktiviteetteja ^',
@@ -83,6 +84,9 @@
 		'no_recent_updates' => 'Ei viimeisimpiä uutisia',
 		'no_updates_content' => 'Ei viimeisimpiä uutisia sisällössäni',
 		'no_updates_favorites' => 'Ei viimeisimpiä uutisia suosikeissani',
+		'outbox' => 'Lähetetyt',
+		'pm_inbox_title' => 'Yksityisviesti saapunut',
+		'pm_outbox_title' => 'Yksityisviesti lähetetty',
 		'private_message_title' => 'Lähetä yksityisviesti',
 		'recent_activity_from_x' => 'Viimeisin aktiviteetti ^',
 		'recent_updates_content' => 'Tuoreimmat sisältöni',
@@ -113,7 +117,7 @@
 		'your_q_reshown' => 'kysymyksesi näkyy taas',
 		'your_q_retagged' => 'kysymyksessäsi on uusia avainsanoja',
 	);
-	
+
 
 /*
 	Omit PHP closing tag to help avoid accidental output

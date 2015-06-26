@@ -1,13 +1,9 @@
 <?php
-	
 /*
 	Question2Answer by Gideon Greenspan and contributors
-
 	http://www.question2answer.org/
 
-	
 	File: qa-include/qa-lang-emails.php
-	Version: See define()s at top of qa-include/qa-base.php
 	Description: Language phrases for email notifications
 
 
@@ -15,7 +11,7 @@
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 2
 	of the License, or (at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -65,7 +61,7 @@
 
 		'q_posted_body' => "Käyttäjä ^q_handle on kysynyt uuden kysymyksen:\n\n^open^q_title\n\n^q_content^close\n\nKlikkaa alla olevaa linkkiä nähdäksesi kysymyksen:\n\n^url\n\nKiitos,\n\n^site_title",
 		'q_posted_subject' => 'Sivustolla ^site_title on uusi kysymys',
-		
+
 		'remoderate_body' => "^p_handle muokkaama postitus vaatii uudelleenhyväksynnän:\n\n^open^p_context^close\n\nHyväksy tai piilota muokkaukset:\n\n^url\n\n\nNähdäksesi kaikki hyväksyntää odottavat postitukset:\n\n^a_url\n\n\nKiitos,\n\n^site_title",
 		'remoderate_subject' => '^site_title moderointipyyntö',
 
@@ -73,22 +69,22 @@
 		'reset_subject' => '^site_title - Resetoi unohtunut salasana',
 
 		'to_handle_prefix' => "^,\n\n",
-		
+
 		'u_registered_body' => "^u_handle on rekisteröitynyt sivustolle.\n\nNähdäksesi profiilin klikkaa linkkiä:\n\n^url\n\nKiitos,\n\n^site_title",
-		'u_to_approve_body' => "^u_handle on rekisteröitynyt sivustolle.\n\nCVahvistaaksesi käyttäjätunnuksen klikkaa linkkiä:\n\n^url\n\nNähdäksesi kaikki hyväksyntää odottavat käyttäjät klikkaa linkkiä:\n\n^a_url\n\nKiitos,\n\n^site_title",
 		'u_registered_subject' => '^site_title on rekisteröitynyt uusi käyttäjä',
-		
+		'u_to_approve_body' => "^u_handle on rekisteröitynyt sivustolle.\n\nCVahvistaaksesi käyttäjätunnuksen klikkaa linkkiä:\n\n^url\n\nNähdäksesi kaikki hyväksyntää odottavat käyttäjät klikkaa linkkiä:\n\n^a_url\n\nKiitos,\n\n^site_title",
+
 		'u_approved_body' => "Voit nähdä luomasi profiilin täällä:\n\n^url\n\nKiitos,\n\n^site_title",
 		'u_approved_subject' => 'Käyttäjätunnuksesi ^site_title sivustolla on hyväksytty',
-		
-		'wall_post_subject' => 'Viesti seinälläsi ^site_title',
+
 		'wall_post_body' => "^f_handle on kirjoittanut sinun seinällesi ^site_title:\n\n^open^post^close\n\nVastataksesi kirjoitukseen klikkaa linkkiä:\n\n^url\n\nKiitos,\n\n^site_title",
+		'wall_post_subject' => 'Viesti seinälläsi ^site_title',
 
 		'welcome_body' => "Kiitos rekisteröitymisestäsi sivustolle ^site_title.\n\n^custom^confirmKirjautumistietosi ovat:\n\nKäyttäjätunnus: ^handle\nSähköpostiosoite: ^email\n\nOle hyvä ja pidä tiedot tallessa mahdollista tarvetta varten.\n\nKiitos,\n\n^site_title\n^url",
 		'welcome_confirm' => "Ole hyvä ja klikkaa alla olevaa linkkiä vahvistaaksesi sähköpostiosoitteesi.\n\n^url\n\n",
 		'welcome_subject' => 'Tervetuloa sivustolle ^site_title!',
 	);
-	
+
 
 /*
 	Omit PHP closing tag to help avoid accidental output

@@ -1,13 +1,9 @@
 <?php
-	
 /*
 	Question2Answer by Gideon Greenspan and contributors
-
 	http://www.question2answer.org/
 
-	
 	File: qa-include/qa-lang-main.php
-	Version: See define()s at top of qa-include/qa-base.php
 	Description: Language phrases commonly used throughout Q2A
 
 
@@ -15,7 +11,7 @@
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 2
 	of the License, or (at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -51,11 +47,11 @@
 		'answer_edited' => 'vastausta on muokattu',
 		'answer_reshown' => 'Vastaus näytetään uudelleen',
 		'answer_selected' => 'Vastaus valittu',
+		'answered' => 'vastattu',
 		'answered_qs_in_x' => '^ liittyvät kysymykset joissa eniten vastauksia',
 		'answered_qs_title' => 'Kysymykset, joissa eniten vastauksia',
-		'answered' => 'vastattu',
-		'asked_related_q' => 'liittyvät kysymykset',
 		'asked' => 'kysytty',
+		'asked_related_q' => 'liittyvät kysymykset',
 		'by_x' => 'käyttäjän ^ toimesta',
 		'cancel_button' => 'Keskeytä',
 		'closed' => 'suljettu',
@@ -80,7 +76,9 @@
 		'date_month_12' => 'joulukuuta',
 //		'date_year_digits' => 4, // 2 or 4
 		'edited' => 'muokattu',
+		'email_error' => 'Tapahtui virhe sähköpostia lähettäessä.',
 		'field_required' => 'vaadittu tieto, täytä jollain',
+		'file_upload_limit_exceeded' => 'Tiedoston koko on suurempi kuin palvelimelle asetettu raja.',
 		'general_error' => 'Palvelinvirhe havaittu - yritä uudelleen.',
 		'hidden' => 'piilotettu',
 		'highest_users' => 'Top käyttäjälista, käyttäjät joilla eniten pisteitä',
@@ -92,10 +90,10 @@
 		'ip_address_x' => 'IP-osoite ^',
 		'logged_in_x' => 'Hei ^',
 		'max_length_x' => 'Suurin sallittu pituus on ^ merkkiä',
+		'max_upload_size_x' => 'Tiedoston suurin sallittu koko on ^',
 		'me' => 'minä',
 		'meta_order' => '^what^when^where^who', // you can reorder but DO NOT translate! e.g. <answered> <15 hours ago> <in Problems> <by me (500 points)>
 		'min_length_x' => 'Lisätietoja vaaditaan (vähimmäispituus ^ merkkiä)',
-		'max_upload_size_x' => 'Tiedoston suurin sallittu koko on ^',
 		'moved' => 'siirretty',
 		'nav_activity' => 'Kaikki aktiivisuus',
 		'nav_admin' => 'Hallinnointi',
@@ -166,10 +164,12 @@
 		'search_title' => 'Etsi kysymyksiä',
 		'selected' => 'valittu',
 		'send_button' => 'Lähetä',
+		'since_x' => '^:stä',
 		'suggest_ask' => 'Aloita ^1esittämällä kysymys tai idea^2.',
 		'suggest_category_qs' => 'Etsitkö jotain muuta? Lue muut ^1kysymykset tässä kategoriassa^2.',
-		'suggest_qs_tags' => 'Etsitkö jotain muuta? Katso myös ^1 kaikkien kysymysten listaus^2 tai ^3suosituimmat tagit^4.',
 		'suggest_qs' => 'Etsitkö jotain muuta? Katso löytyisikö ^1kaikkien kysymysten listauksesta^2.',
+		'suggest_qs_tags' => 'Etsitkö jotain muuta? Katso myös ^1 kaikkien kysymysten listaus^2 tai ^3suosituimmat tagit^4.',
+		'to_x' => '^:een',
 		'unanswered_qs_in_x' => 'Viimeisimmät vastaamattomat kysymykset kategoriassa ^',
 		'unanswered_qs_title' => 'Viimeisimmät vastaamattomat kysymykset',
 		'unselected_qs_in_x' => 'Kysymykset, joihin ei ole valittu vastausta kategoriassa ^',
@@ -223,7 +223,7 @@
 		'x_weeks' => '^ viikkoa',
 		'x_years' => '^ vuotta',
 	);
-	
+
 
 /*
 	Omit PHP closing tag to help avoid accidental output

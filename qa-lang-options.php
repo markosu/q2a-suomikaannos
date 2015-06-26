@@ -1,13 +1,9 @@
 <?php
-	
 /*
 	Question2Answer by Gideon Greenspan and contributors
-
 	http://www.question2answer.org/
 
-	
 	File: qa-include/qa-lang-options.php
-	Version: See define()s at top of qa-include/qa-base.php
 	Description: Language phrases for all options, as shown in admin center
 
 
@@ -15,7 +11,7 @@
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 2
 	of the License, or (at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -27,18 +23,18 @@
 	return array(
 		'allow_change_usernames' => 'Allow users with posts to change their username:',
 		'allow_close_questions' => 'Allow questions to be manually closed:',
-		'allow_login_email_only' => 'Only log in by email address (not username):', 
+		'allow_login_email_only' => 'Only log in by email address (not username):',
 		'allow_multi_answers' => 'Allow multiple answers per user:',
 		'allow_no_category' => 'Allow questions with no category',
 		'allow_no_sub_category' => 'Allow questions with a category but no sub-category',
-		'allow_private_messages' => 'Enable private messaging between users:',
+		'allow_private_messages' => 'Salli yksityisviestit käyttäjien välillä:',
+		'allow_self_answer' => 'Salli käyttäjien vastata heidän omiin kysymyksiin:',
 		'allow_user_walls' => 'Enable wall posts on user profiles:',
-		'allow_self_answer' => 'Allow users to answer their own question:',
-		'allow_view_q_bots' => 'Allow search engines to view question pages',
-		'approve_user_required' => 'All new users must be approved:',
-		'avatar_allow_gravatar' => 'Allow ^1Gravatar^2 avatars:',
-		'avatar_allow_upload' => 'Allow users to upload avatars:',
-		'avatar_default_show' => 'Default avatar:',
+		'allow_view_q_bots' => 'Salli hakukoneiden indeksointi kysymyssivuilla:',
+		'approve_user_required' => 'Kaikki käyttäjätunnukset pitää hyväksyä:',
+		'avatar_allow_gravatar' => 'Salli ^1Gravatar^2 avatar:',
+		'avatar_allow_upload' => 'Salli käyttäjien ladata oma avatar:',
+		'avatar_default_show' => 'Oletusavatar:',
 		'avatar_message_list_size' => 'Avatar size on message lists:',
 		'avatar_profile_size' => 'Avatar size on user profile page:',
 		'avatar_q_list_size' => 'Avatar size on question lists:',
@@ -65,9 +61,10 @@
 		'custom_home_content' => 'Home page content - HTML allowed:',
 		'custom_home_heading' => 'Home page heading:',
 		'default_privacy' => 'Privacy: Your email address will not be shared or sold to third parties.',
-		'default_sidebar' => "Welcome to ^, where you can ask questions and receive answers from other members of the community.",
+		'default_sidebar' => 'Welcome to ^, where you can ask questions and receive answers from other members of the community.',
 		'default_subject' => 'A message from ^',
 		'default_suffix' => 'Q&A',
+		'default_terms' => 'I agree to the ^ Terms & Conditions and Privacy Policy',
 		'do_ask_check_qs' => 'Check for similar questions when asking:',
 		'do_close_on_select' => 'Close questions with a selected answer:',
 		'do_complete_tags' => 'Show matching tags while typing:',
@@ -78,8 +75,8 @@
 		'editor_for_qs' => 'Default editor for questions:',
 		'email_privacy' => 'Privacy note for email addresses - HTML allowed:',
 		'extra_field_active' => 'Custom field for extra information on ask form:',
-		'extra_field_display_label' => 'Show the extra information on question pages with label:',
 		'extra_field_display' => 'Show the extra information on question pages',
+		'extra_field_display_label' => 'Show the extra information on question pages with label:',
 		'feed_for_activity' => 'Feed for recent activity:',
 		'feed_for_hot' => 'Feed for hot questions:',
 		'feed_for_qa' => 'Feed for recent questions and answers:',
@@ -163,6 +160,7 @@
 		'page_size_ask_tags' => 'Maximum tag hints to show:',
 		'page_size_home' => 'Length of Q&A page:',
 		'page_size_hot_qs' => 'Length of Hot! page:',
+		'page_size_pms' => 'Private messages per page:',
 		'page_size_q_as' => 'Maximum answers per page:',
 		'page_size_qs' => 'Length of Questions page:',
 		'page_size_related_qs' => 'Maximum related questions:',
@@ -187,8 +185,8 @@
 		'permit_editors' => 'Editors, Moderators, Admins',
 		'permit_experts' => 'Experts, Editors, Moderators, Admins',
 		'permit_moderators' => 'Moderators and Admins',
-		'permit_points_confirmed' => 'Registered & email confirmed & enough points',
 		'permit_points' => 'Registered users with enough points',
+		'permit_points_confirmed' => 'Registered & email confirmed & enough points',
 		'permit_see_emails' => 'Viewing user email addresses:',
 		'permit_supers' => 'Super Administrators',
 		'permit_users' => 'Registered users',
@@ -236,7 +234,7 @@
 		'show_custom_header' => 'Custom HTML at top of every page:',
 		'show_custom_home' => 'Custom content in home page instead of Q&A',
 		'show_custom_in_head' => 'Custom HTML in <head> section of every page:',
-		'show_custom_register' => 'Custom message on register form - HTML allowed:',
+		'show_custom_register' => 'Custom message on registration form - HTML allowed:',
 		'show_custom_sidebar' => 'Custom HTML in sidebar box on every page:',
 		'show_custom_sidepanel' => 'Custom HTML in side panel on every page:',
 		'show_custom_welcome' => 'Custom message in email sent to new registered users:',
@@ -249,30 +247,33 @@
 		'show_never' => 'Never',
 		'show_notice_visitor' => 'Notice at top for first time visitors - HTML allowed:',
 		'show_notice_welcome' => 'Notice at top for new registered users - HTML allowed:',
+		'show_post_update_meta' => 'Show edits/updates in post meta:',
+		'show_register_terms' => 'Terms & Conditions checkbox on registration form - HTML allowed:',
 		'show_selected_first' => 'Move selected answer to the top:',
 		'show_url_links' => 'Detect and link URLs in posts:',
 		'show_user_points' => 'Show points next to usernames:',
 		'show_user_titles' => 'Show titles next to usernames:',
-		'show_view_counts' => 'Show view count in question lists:',
 		'show_view_count_q_page' => 'Show view count on question pages:',
+		'show_view_counts' => 'Show view count in question lists:',
 		'show_when_created' => 'Show age of user posts:',
 		'site_language' => 'Site language:',
 		'site_maintenance' => 'Take site down for temporary maintenance',
-		'site_theme_mobile' => 'Theme for mobiles:',
-		'site_theme' => 'Site theme:',
-		'site_title' => 'Q&A site name:',
+		'site_text_direction' => 'Site text direction:',
+		'site_theme' => 'Sivuston teema:',
+		'site_theme_mobile' => 'Mobiililaitteiden teema:',
+		'site_title' => 'Kysymys- ja vastaussivuston nimi:',
 		'site_url' => 'Preferred site URL:',
 		'smtp_active' => 'Send email via SMTP instead of local mail',
 		'smtp_address' => 'SMTP server address:',
 		'smtp_authenticate' => 'Send SMTP username and password',
 		'smtp_password' => 'SMTP password:',
 		'smtp_port' => 'SMTP server port:',
-		'smtp_secure_none' => 'None',
 		'smtp_secure' => 'SMTP secure connection:',
+		'smtp_secure_none' => 'None',
 		'smtp_username' => 'SMTP username:',
 		'sort_answers_by' => 'Sort answers by:',
-		'sort_time' => 'Time',
-		'sort_votes' => 'Votes',
+		'sort_time' => 'Aika',
+		'sort_votes' => 'Äänet',
 		'suspend_register_users' => 'Temporarily suspend new user registrations:',
 		'tag_separator_comma' => 'Use comma as the only tag separator:',
 		'tags_or_categories' => 'Question classification:',
@@ -283,7 +284,7 @@
 		'voting_on_q_page_only' => 'Allow voting on question page only:',
 		'voting_on_qs' => 'Allow voting on questions:',
 	);
-	
+
 
 /*
 	Omit PHP closing tag to help avoid accidental output

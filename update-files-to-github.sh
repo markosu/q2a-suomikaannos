@@ -19,7 +19,7 @@
 # The address of github translation repository:
 GITHUBREPO="git@github.com:q2a-suomi/q2a-suomikaannos.git"
 # local path of the repository folder, if does not exist -> exit
-LOCALPATH="/home/kyyberi/Github"
+LOCALPATH="/home/users/marko5/hytefi"
 REPOFOLDER="q2a-suomikaannos"
 now=$(date)
 

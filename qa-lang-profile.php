@@ -1,13 +1,9 @@
 <?php
-	
 /*
 	Question2Answer by Gideon Greenspan and contributors
-
 	http://www.question2answer.org/
 
-	
 	File: qa-include/qa-lang-profile.php
-	Version: See define()s at top of qa-include/qa-base.php
 	Description: Language phrases for user profile page
 
 
@@ -15,7 +11,7 @@
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 2
 	of the License, or (at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -30,10 +26,11 @@
 		'1_up_vote' => '1 peukutus ylös',
 		'1_with_best_chosen' => ' (1 valittu parhaaksi vastaukseksi)',
 		'activity_by_x' => '^:n aktiivisuus',
-		'answers_by_x' => '^:n vastaukset',		
 		'answers' => 'Vastaukset:',
+		'answers_by_x' => '^:n vastaukset',
 		'bonus_points' => 'Lisäpisteet:',
 		'comments' => 'Kommentit:',
+		'delete_pm_popup' => 'Poista tämä yksityinen viesti',
 		'delete_wall_post_popup' => 'Poista tämä seinäviesti',
 		'extra_privileges' => 'Lisäoikeudet:',
 		'gave_out' => 'Antanut pois:',
@@ -70,8 +67,8 @@
 		'post_wall_must_be_approved' => 'Tunnuksesi pitää hyväksyä ennen kuin pystyt kirjoittamaan tälle seinälle.',
 		'post_wall_must_confirm' => 'Ole hyvä ja ^5vahvista sähköpostiosoitteesi^6 kirjoittaaksesi tälle seinälle.',
 		'post_wall_must_login' => 'Ole hyvä ja ^1kirjaudu^2 tai ^3rekisteröidy^4 kirjoittaaksesi tälle seinälle.',
-		'questions_by_x' => '^:n kysymykset',
 		'questions' => 'Sisällöt:',
+		'questions_by_x' => '^:n kysymykset',
 		'ranked_x' => ' (sijoitus #^)',
 		'received' => 'Saatu:',
 		'recent_activity_by_x' => '^ - viimeaikaisin aktivisuus',
@@ -88,7 +85,7 @@
 		'x_up_votes' => '^ peukut ylöspäin',
 		'x_with_best_chosen' => ' (^ parasta vastausta)',
 	);
-	
+
 
 /*
 	Omit PHP closing tag to help avoid accidental output

@@ -1,13 +1,9 @@
 <?php
-	
 /*
 	Question2Answer by Gideon Greenspan and contributors
-
 	http://www.question2answer.org/
 
-	
 	File: qa-include/qa-lang-question.php
-	Version: See define()s at top of qa-include/qa-base.php
 	Description: Language phrases for question page
 
 
@@ -15,7 +11,7 @@
 	modify it under the terms of the GNU General Public License
 	as published by the Free Software Foundation; either version 2
 	of the License, or (at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -26,10 +22,10 @@
 
 	return array(
 		'1_answer_title' => '1 vastaus',
-		'a_convert_to_c_on' => 'Muunna tämä vastaus kommentiksi kysymykseen:',
 		'a_convert_to_c' => 'Muunna tämä vastaus kommentiksi',
-		'a_convert_warn_cs' => 'Varoitus: Tätä muunnosta ei voi peruuttaa ja se siirtää myös vastauksen kommentit.',
+		'a_convert_to_c_on' => 'Muunna tämä vastaus kommentiksi kysymykseen:',
 		'a_convert_warn' => 'Varoitus: muunnosta ei voi peruuttaa.',
+		'a_convert_warn_cs' => 'Varoitus: Tätä muunnosta ei voi peruuttaa ja se siirtää myös vastauksen kommentit.',
 		'a_notify_email' => 'Lähetä minulle sähköpostia tähän osoitteeseen jos vastaukseni valitaan tai sitä kommentoidaan:',
 		'a_notify_label' => 'Lähetä minulle sähköpostia jos vastaukseni valitaan tai sitä kommentoidaan',
 		'a_notify_x_label' => 'Lähetä minulle sähköpostia (^) jos vastaukseni valitaan tai sitä kommentoidaan',
@@ -45,7 +41,10 @@
 		'answer_must_confirm' => 'Ole hyvä ja ^5vahvista sähköpostiosoitteesi^6 vastataksesi kysymykseen.',
 		'answer_must_login' => 'Ole hyvä ja ^1kirjaudu sisään^2 tai ^3rekisteröidy^4 vastataksesi kysymykseen.',
 		'answer_q_popup' => 'Vastaa tähän kysymykseen',
+		'approve_a_popup' => 'Hyväksy vastaus',
 		'approve_button' => 'hyväksy',
+		'approve_c_popup' => 'Hyväksy kommentti',
+		'approve_q_popup' => 'Hyväksy vastaus',
 		'ask_button' => 'Esitä kysymys',
 		'ask_follow_from_a' => 'Seuraava vastaus liittyy kysymykseesi:',
 		'ask_follow_title' => 'Kysy tähän liittyvä kysymys',
@@ -60,15 +59,18 @@
 		'c_notify_x_label' => 'Lähetä minulle sähköpostia (^) jos joku kommentoi minun jälkeeni.',
 		'c_waiting_your_approval' => 'Tämä kommentti odottaa hyväksyntää',
 		'c_your_waiting_approval' => 'Kommenttisi tarkistetaan ja hyväksytään pikapuoliin.',
+		'category_ask_not_allowed' => 'Sinulla ei ole oikeuksia esittää kysymystä tässä kategoriassa.',
 		'category_js_note' => 'Valitaksesi kategorian, ole hyvä ja salli Javascript selaimessasi.',
 		'category_required' => 'Ole hyvä ja valitse kategoria',
-		'category_ask_not_allowed' => 'Sinulla ei ole oikeuksia esittää kysymystä tässä kategoriassa.',
+		'claim_a_popup' => 'Merkitse tämä vastaus käyttäjätunnuksellesi',
 		'claim_button' => 'minä kirjoitin tämän',
+		'claim_c_popup' => 'Merkitse tämä kommentti käyttäjätunnuksellesi',
+		'claim_q_popup' => 'Merkitse tämä vastaus käyttäjätunnuksellesi',
 		'clear_flags_button' => 'poista ilmoitukset',
 		'clear_flags_popup' => 'Poista kaikki käyttäjien tekemät ilmoitukset',
 		'close_button' => 'sulje',
-		'close_duplicate_error' => 'Samankaltaista kysymystä ei löytynyt - ole hyvä ja yritä lisätä eri kysymyksen numero URL-osoitteesta, esim 123.',
 		'close_duplicate' => 'Tämä on kopio toisesta kysymyksestä',
+		'close_duplicate_error' => 'Samankaltaista kysymystä ei löytynyt - ole hyvä ja yritä lisätä eri kysymyksen numero URL-osoitteesta, esim 123.',
 		'close_form_button' => 'Sulje kysymys',
 		'close_form_title' => 'Sulje tämä kysymys',
 		'close_original_note' => 'Voit myös kirjoittaa kysymyksen numeron URL-osoitteesta, esim. 123.',
@@ -139,17 +141,24 @@
 		'recat_button' => 'Vaihda kategoria',
 		'recat_popup' => 'Vaihda tämän kysymyksen kategoria',
 		'recat_q_title' => 'Uudelleenkategorisoi kysymys',
+		'reject_a_popup' => 'Hylkää tämä vastaus',
 		'reject_button' => 'hylkää',
+		'reject_c_popup' => 'Hylkää tämä kommentti',
+		'reject_q_popup' => 'Hylkää tämä kysymys',
 		'remove_q_favorites' => 'Poista kysymys suosikeistani',
 		'reopen_button' => 'avaa uudelleen',
+		'reopen_q_popup' => 'Avaa kysymys uudelleen',
 		'reply_button' => 'vastaa',
 		'reply_c_popup' => 'Vastaa tähän kommenttiin',
+		'reshow_a_popup' => 'Avaa vastaus uudelleen',
 		'reshow_button' => 'näytä uudelleen',
+		'reshow_c_popup' => 'Avaa kommentti uudelleen',
+		'reshow_q_popup' => 'Näytä kysymys uudelleen',
 		'retag_button' => 'uudelleentagaa',
 		'retag_cat_popup' => 'Vaihda tämän kysymyksen kategoriaa tai tageja',
 		'retag_popup' => 'Vaihda tämän kysymyksen tageja',
 		'retag_q_title' => 'Uudelleentagaa kysymys',
-		'save_silent_label' => 'Tallenna \'hiljaisesti\' siten ettei muutoksesta jää merkintää', 
+		'save_silent_label' => 'Tallenna \'hiljaisesti\' siten ettei muutoksesta jää merkintää',
 		'select_popup' => 'Klikkaa valitaksesi paras vastaus',
 		'select_text' => 'Paras vastaus',
 		'show_1_comment' => 'Näytä 1 kommentti',
@@ -164,7 +173,7 @@
 		'your_comment_a' => 'Kommenttisi tälle vastaukselle:',
 		'your_comment_q' => 'Kommenttisi tälle kysymykselle:',
 	);
-	
+
 
 /*
 	Omit PHP closing tag to help avoid accidental output
