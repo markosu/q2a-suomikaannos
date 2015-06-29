@@ -19,7 +19,7 @@
 # The address of github translation repository:
 GITHUBREPO="git@github.com:q2a-suomi/q2a-suomikaannos.git"
 # local path of the repository folder, if does not exist -> exit
-LOCALPATH="/home/users/marko5/hytefi"
+LOCALPATH="$HOME/hytefi"
 REPOFOLDER="q2a-suomikaannos"
 now=$(date)
 
@@ -39,19 +39,23 @@ if [ -d $REPOFOLDER/.git ]; then
 	# git clean -f -d
 	# The above will remove .tx folder as well
 	git pull
+	rm -rf ./*.php # tx ohjelmassa bugi, ei kirjoita olemassa olevien päälle
 	echo "last update: $now" >> update.log
 
 else
 	echo "1/3 Updating local repository from Github" >> update.log
 	echo "Local repository not found, cloning repository..."  >> update.log
 	git clone $GITHUBREPO
+	rm -rf ./*.php # tx ohjelmassa bugi, ei kirjoita olemassa olevien päälle
 
 fi;
 
 echo "Done with local repository update from Github"  >> update.log
 echo "---------------------------------------------"  >> update.log
 echo "2/3 Pulling new translations from Transifex"  >> update.log
-/home/users/marko5/.local/bin/tx pull -a
+
+cd "/home/users/marko5/hytefi/q2a-suomikaannos"
+$HOME/.local/bin/tx pull -a
 
 echo "Done with Transifex"  >> update.log
 echo "--------------------"  >> update.log
