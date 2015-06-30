@@ -133,7 +133,7 @@
 		'q_notify_label' => 'Lähetä minulle sähköpostia jos kysymykseeni vastataan tai sitä kommentoidaan',
 		'q_notify_x_label' => 'Lähetä minulle (^) sähköpostia, jos kysymykseeni vastataan tai sitä kommentoidaan',
 		'q_tags_comma_label' => 'Tagit - käytä pilkkua (,) erottimena:',
-		'q_tags_label' => 'Tagit | käytä "-" merkkiä yhdistääksesi sanoja:',
+		'q_tags_label' => 'Tagit -  käytä "-" merkkiä yhdistääksesi sanoja:',
 		'q_title_label' => 'Kysymyksesi yhdellä lauseella:',
 		'q_waiting_approval' => 'Tämä kysymys odottaa hyväksyntää',
 		'q_waiting_your_approval' => 'Tämä kysymys odottaa hyväksyntääsi',
