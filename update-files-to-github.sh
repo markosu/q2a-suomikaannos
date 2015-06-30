@@ -19,7 +19,7 @@
 # The address of github translation repository:
 GITHUBREPO="git@github.com:q2a-suomi/q2a-suomikaannos.git"
 # local path of the repository folder, if does not exist -> exit
-LOCALPATH="$HOME/hytefi"
+LOCALPATH="$HOME/Github"
 REPOFOLDER="q2a-suomikaannos"
 now=$(date)
 
@@ -54,7 +54,7 @@ echo "Done with local repository update from Github"  >> update.log
 echo "---------------------------------------------"  >> update.log
 echo "2/3 Pulling new translations from Transifex"  >> update.log
 
-cd "/home/users/marko5/hytefi/q2a-suomikaannos"
+cd "$HOME/Github/q2a-suomikaannos"
 $HOME/.local/bin/tx pull -a
 
 echo "Done with Transifex"  >> update.log
