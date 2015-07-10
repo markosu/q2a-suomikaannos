@@ -53,7 +53,7 @@
 		'permit_post_q' => 'Esittää kysymyksiä',
 		'permit_post_wall' => 'Salli seinäkirjoitukset',
 		'permit_recat' => 'Vaihtaa kysymyksien kategoriaa',
-		'permit_retag' => 'Vaihtaa kysymysten tageja',
+		'permit_retag' => 'Vaihtaa kysymysten avainsanoja',
 		'permit_select_a' => 'Valita kysymyksiin paras vastaus',
 		'permit_view_q_page' => 'Lukea sisältöä',
 		'permit_view_voters_flaggers' => 'Näytä kuka äänesti tai liputti sisältöä',
